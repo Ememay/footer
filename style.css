@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: rtl;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    width: 100%;
+    height: auto;
+    margin: 50px 0px 0px 0px;
+}
+
+footer a {
+    color: #fff
+}
+
+footer a:hover {
+    color: #fff !important;
+}
+
+footer .container {
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1140px;
+    font-size: 16px;
+}
+
+footer .container .quick-accses {
+    text-align: right;
+    float: right;
+}
+
+footer .container .quick-accses ul {
+    padding: 0
+}
+
+footer .container .quick-accses strong {
+    margin: 15px 0px !important;
+    display: block;
+    font-weight: bold;
+}
+
+footer .container .quick-accses ul li {
+    list-style: none;
+    line-height: 40px;
+}
+
+footer .container .center {
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+footer .container .center span {
+    font-size: 28px;
+}
+
+footer .container .support a {
+    text-align: right;
+    align-items: center;
+    display: flex;
+    column-gap: 10px;
+}
+
+@media screen and (max-width:600px) {
+    footer .container {
+        flex-direction: column;
+        padding: 30px;
+    }
+    footer .container .quick-accses {
+        text-align: unset;
+    }
+    footer .container .center span {
+        font-size: 26px;
+    }
+    footer .container .center {
+        margin: 40px 0px;
+    }
+}
